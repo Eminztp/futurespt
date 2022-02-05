@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menü</title>
+</head>
+
+<body>
+
+
+    <!-- NAVİGATİON -->
+    <div class="navigation">
+        <input type="checkbox" name="navi" id="navi-check" class="navi-check">
+        <label for="navi-check" class="navi-label">
+                <span class="navi-icon"></span>
+            </label>
+        <div class="navi-bg"></div>
+        <nav class="navi-menu">
+            <ul class="navi-list">
+                <li class="navi-list-item">
+                    <a href="../index.html" class="navi-link">HOME</a>
+                </li>
+                <li class="navi-list-item">
+                    <a href="about.html" class="navi-link">ABOUT</a>
+                </li>
+                <li class="navi-list-item">
+                    <a href="team.html" class="navi-link">TEAM</a>
+                </li>
+                <li class="navi-list-item">
+                    <a href="photos.html" class="navi-link">PHOTOS</a>
+                </li>
+                <li class="navi-list-item">
+                    <a href="contact.php" class="navi-link">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo">
+        <a href="../index.html">
+            <h1 class="footer-title ">Future </br> Spotting Team</h1>
+        </a>
+    </div>
+
+    <div class="header-photo-global">
+        <img src="images/IMG_0685_d.jpg" alt="747" id="header-photo">
+        <div class="black-filter"></div>
+        <h1>about</h1>
+    </div>
+    <main class="about">
+        <div class="p-cont">
+            <p class="first-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum lacinia mi sit amet consectetur. Donec enim magna, porttitor sed massa sed, iaculis mattis quam. Donec laoreet tellus dolor, vel sodales risus elementum in. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin mattis, lacus in venenatis gravida, ipsum dui gravida mi, et pellentesque purus elit vel dolor. Quisque blandit viverra pharetra. Cras feugiat elit sit amet eros rhoncus, tincidunt placerat tortor dignissim.
+                Ut non orci blandit nulla fermentum laoreet vitae eu tortor. Morbi imperdiet rhoncus ultrices. Duis vitae augue iaculis, condimentum orci vel, tempor tortor. In tincidunt blandit ipsum. Phasellus at nisi dignissim, egestas neque nec, sagittis
+                odio. Aliquam dapibus nec mi eget commodo.
+            </p>
+
+            <!-- LEFT P -->
+            <div class="left-p-cont">
+                <p>
+                    Fusce hendrerit diam eu lacus lacinia ultricies. Donec pellentesque, est vitae tempus ultrices, elit erat pellentesque ex, sit amet bibendum arcu velit in metus. Nam sed mauris ut arcu interdum efficitur faucibus quis libero. Donec fringilla, tortor quis
+                    porttitor gravida, quam magna dignissim turpis, a fringilla elit mi sed tortor. Nam pharetra, tortor eget lobortis accumsan, enim lectus congue dolor, quis ullamcorper mauris enim ac erat. Aenean blandit ex ut ex luctus feugiat. Mauris.
+                </p>
+                <div class="left-p-image-cont">
+
+                    <img src="images/IMG_0612-02-01_20.jpeg" title="World first UAV airshow w/F-16 at Teknofest'21" alt="World first UAV airshow w/F-16 at Teknofest'21">
+
+                    <figcaption>World first UAV airshow w/F-16 at Teknofest'21</figcaption>
+                </div>
+            </div>
+
+            <!-- RİGHT P -->
+            <div class="right-p-cont">
+                <p>
+                    Aliquam erat volutpat. Cras dolor leo, tempor eu tortor euismod, volutpat aliquet purus. Duis nisi velit, vestibulum vitae felis pretium, rutrum consequat odio. Aenean hendrerit felis in lorem pellentesque commodo. Nullam at arcu et metus dictum dictum
+                    ac eu dui. In molestie gravida risus, ultricies ultricies ex posuere nec. Proin lacus eros, egestas sit amet orci sit amet, blandit euismod lectus. Phasellus blandit aliquet nisi, placerat tempor velit tincidunt eget.
+                </p>
+                <div class="right-p-image-cont">
+                    <img src="images/ty.jpeg" title="Turkish Stars at Teknofest'21" alt="Turkish Stars at Teknofest'21">
+                    <figcaption>Turkish Stars at Teknofest'21</figcaption>
+                </div>
+            </div>
+        </div>
+        <div class="footer-slider-cont">
+            <div class="yatay-scroll">
+
+
+                <div class="btn-layer1"></div>
+                <button class="btn-scroll" id="left-scroll-btn" onclick="scrollHorizontally(1)"></button>
+
+                <div class="btn-layer2"></div>
+                <button class="btn-scroll" id="right-scroll-btn" onclick="scrollHorizontally(-1)"></button>
+
+
+                <div class="slider-photo-cont">
+                    <!-- turhan -->
+                    <div class="slider-photo-item">
+                        <img src="images/asseman_27.jpg" alt="">
+                    </div>
+                    <!-- yağız -->
+                    <div class="slider-photo-item">
+                        <img src="images/mehmetkilic.jpg" alt="">
+                    </div>
+                    <!-- mustafa -->
+                    <div class="slider-photo-item">
+                        <img src="images/kargomustafa.jpg" alt="">
+                    </div>
+                    <!-- emin -->
+                    <div class="slider-photo-item">
+                        <img src="images/ty-waved.jpeg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script>
+        let currentScrollPosition = 0;
+        let scrollAmount = 520;
+
+        const sCont = document.querySelector(".slider-photo-cont");
+        const hScroll = document.querySelector(".yatay-scroll");
+        const leftScrollBtn = document.querySelector("#left-scroll-btn");
+        const rightScrollBtn = document.querySelector("#right-scroll-btn");
+        const leftScrollBtnla = document.querySelector(".btn-layer1");
+        const rightScrollBtnla = document.querySelector(".btn-layer2");
+
+        leftScrollBtn.style.visibility = "hidden";
+        leftScrollBtnla.style.visibility = "hidden";
+
+        let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+
+
+        function scrollHorizontally(val) {
+
+            currentScrollPosition += (val * scrollAmount);
+
+            if (currentScrollPosition >= 0) {
+                currentScrollPosition = 0;
+                leftScrollBtn.style.visibility = "hidden";
+                leftScrollBtnla.style.visibility = "hidden";
+
+            } else {
+                leftScrollBtn.style.visibility = "visible";
+                leftScrollBtnla.style.visibility = "visible";
+            }
+
+            if (currentScrollPosition <= maxScroll) {
+                currentScrollPosition = maxScroll;
+                rightScrollBtn.style.visibility = "hidden";
+                rightScrollBtnla.style.visibility = "hidden";
+
+            } else {
+                rightScrollBtn.style.visibility = "visible";
+                rightScrollBtnla.style.visibility = "visible";
+            }
+
+            sCont.style.left = currentScrollPosition + "px";
+        }
+    </script>
+
+</body>
+
+<footer>
+    <div class="footer-li-cont">
+        <li><a href="../index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="photos.html">photos</a></li>
+        <li><a href="team.html">team</a></li>
+        <li><a href="contact.php">contact</a></li>
+    </div>
+
+    <div class="footer-logo-cont">
+
+        <h2 class="footer-title">Future </br> Spotting Team</h2>
+        <h6>copyright © 2022 all rights reserved</h6>
+
+    </div>
+</footer>
+
+</html>
