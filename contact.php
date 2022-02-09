@@ -20,7 +20,7 @@
 try {
     $Veritabanibaglantisi   =   new PDO("mysql:host=localhost;dbname=id14546080_emin;charset=UTF8", "id14546080_emindb", "Deneme12345@");
 } catch (PDOException $Hata) {
-    echo "Bağlantı Hatası<br />" . $Hata->getMessage(); //Bu alanı kapatın çükü kullunıcılar hata kodunu görmesin ok
+    echo "Bağlantı Hatası<br />"; // $Hata->getMessage(); Bu alanı kapatın çükü kullunıcılar hata kodunu görmesin ok
     die();
 }
 $AyarlarSorgusu     =   $Veritabanibaglantisi->prepare("SELECT * FROM ayarlar LIMIT 1");
